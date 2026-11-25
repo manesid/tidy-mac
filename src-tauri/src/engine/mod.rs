@@ -1,0 +1,12 @@
+pub mod alerts;
+pub mod catalog;
+pub mod cleaner;
+pub mod disk;
+pub mod explorer;
+pub mod guard;
+pub mod menubar;
+pub mod scanner;
+pub mod settings;
+pub mod space;
+pub mod store;
+pub mod trend;
