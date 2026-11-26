@@ -33,6 +33,22 @@ before your disk fills up. Rust core (Tauri v2) · React + shadcn/ui interface �
 
 See [DESIGN.md](DESIGN.md) for the architecture.
 
+## Install
+1. Download `Tidy_<version>_universal.dmg` from the [latest release](https://github.com/manesid/tidy-mac/releases/latest)
+   (runs on Apple Silicon and Intel, macOS 12 or later).
+2. Open the dmg and drag **Tidy** into **Applications**.
+3. First launch: Tidy is open source and not signed with a paid Apple Developer ID, so macOS blocks it the
+   first time. Allow it once:
+   - **macOS 15 and later:** open Tidy, click **Done** on the warning, then go to System Settings →
+     Privacy & Security, scroll down and click **Open Anyway** next to Tidy.
+   - **macOS 12 to 14:** right-click Tidy in Applications, choose **Open**, then **Open** again.
+   - **Or, in Terminal:** `xattr -dr com.apple.quarantine /Applications/Tidy.app`
+
+   After that it opens normally. If you'd rather not trust a downloaded build, build it from source (below);
+   apps you build yourself are not blocked.
+
+The SHA-256 of each dmg is listed in its release notes.
+
 ## Develop
 Requirements: Rust (stable), Node 20+.
 
